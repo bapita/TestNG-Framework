@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Regression Test Automation Test Suite">
+
+	<listeners>
+		<listener class-name="com.qa.ExtentReportListener.ExtentReporterNG" />
+	</listeners>
+	
+	<!-- This is a Test runner class to run all the test cases at once -->
+	<!-- Likewise we can create one xml for regression, one for Sanity etc.. -->
+	<test name="Regression Test Cases">
+		<classes>
+			<class name="com.crm.qa.testcases.LoginPageTest"></class>
+			<class name="com.crm.qa.testcases.HomePageTest"></class>
+			<class name="com.crm.qa.testcases.ContactsPageTest"></class>
+			<!-- For removing a test case to get executed, Select class > Right click > Source > Add block comment -->
+		</classes>
+	</test>
+</suite>
